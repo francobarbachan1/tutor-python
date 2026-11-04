@@ -1,0 +1,11 @@
+# Se crean al usar el tutor, no se suben
+modelo.joblib
+.instalado
+datos/dudas_nuevas.csv
+datos/ultimo_entrenamiento.json
+__pycache__/
+*.pyc
+
+# Configuración privada (clave de la IA, link de la planilla, contraseña del equipo)
+.streamlit/secrets.toml
+.env

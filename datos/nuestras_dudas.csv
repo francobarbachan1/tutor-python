@@ -1,0 +1,178 @@
+duda,tema
+por que no puedo poner nombre de usuario como variable? me sale error,Variables y tipos de datos
+en usuario = input() el usuario es el de instagram?,Variables y tipos de datos
+cuando van comillas en el print y cuando no? puse print(1) sin comillas y pense que iba a dar error,print e input
+por que hay que poner int adelante del input?,print e input
+"si pongo una edad menor a 18 no sale nada, el programa no hace nada","Condicionales (if, elif, else)"
+como hago para que el for vaya saltando de a 3?,"Bucles (for, while)"
+"mi while imprime hola infinitas veces y no para, como lo corto?","Bucles (for, while)"
+por que el primer elemento de la lista es el 0 y no el 1?,Listas
+despues del input se me puso todo verde y no anda,Errores
+me da error en el elif y creo que esta bien escrito,Errores
+que es una variable? no entiendo para que sirve,Variables y tipos de datos
+puedo cambiarle el valor a una variable despues de crearla?,Variables y tipos de datos
+por que se pierde lo que guarde en la variable cuando cierro el programa?,Variables y tipos de datos
+"cual es la diferencia entre poner ""5"" y 5",Variables y tipos de datos
+"como guardo un numero con coma, tipo 7.5",Variables y tipos de datos
+el nombre de la variable puede empezar con un numero?,Variables y tipos de datos
+que es un string y que es un int,Variables y tipos de datos
+si pongo x = x + 1 que pasa con x,Variables y tipos de datos
+como hago para que el programa me pregunte el nombre,print e input
+como muestro un texto y una variable en el mismo print,print e input
+"el input me devuelve texto y quiero sumar dos numeros, me sale 23 en vez de 5",print e input
+como hago para que el print no salte de linea,print e input
+como le pido dos numeros al usuario,print e input
+para que sirve lo que va adentro de los parentesis del input,print e input
+quiero mostrar el resultado de una cuenta en pantalla,print e input
+como hago un salto de linea dentro del print,print e input
+como hago que el programa decida si un numero es par o impar,"Condicionales (if, elif, else)"
+cuando uso elif y cuando else,"Condicionales (if, elif, else)"
+puedo poner dos condiciones en el mismo if?,"Condicionales (if, elif, else)"
+por que se pone == y no = en el if,"Condicionales (if, elif, else)"
+quiero que diga aprobado si la nota es 6 o mas,"Condicionales (if, elif, else)"
+el if lleva dos puntos al final?,"Condicionales (if, elif, else)"
+como hago un programa que compare dos edades y diga cual es mayor,"Condicionales (if, elif, else)"
+que pasa si ninguna condicion se cumple,"Condicionales (if, elif, else)"
+como uso and y or,"Condicionales (if, elif, else)"
+como hago que algo se repita 10 veces,"Bucles (for, while)"
+cual es la diferencia entre for y while,"Bucles (for, while)"
+que significa la i en for i in range,"Bucles (for, while)"
+por que range(5) llega hasta 4 y no hasta 5,"Bucles (for, while)"
+como hago una cuenta regresiva del 10 al 1,"Bucles (for, while)"
+como sumo los numeros del 1 al 100 con un ciclo,"Bucles (for, while)"
+quiero que me siga pidiendo la contraseña hasta que la ponga bien,"Bucles (for, while)"
+lo que esta adentro del for se repite todo o solo la primera linea?,"Bucles (for, while)"
+como guardo varios nombres juntos en una sola variable,Listas
+como agrego un elemento al final de una lista,Listas
+como se cuantos elementos tiene una lista,Listas
+como muestro todos los elementos de una lista uno por uno,Listas
+como saco un elemento de la lista,Listas
+puedo tener numeros y palabras en la misma lista?,Listas
+como cambio el segundo elemento de una lista,Listas
+si recorro una lista con for cuantas veces se repite,Listas
+como busco si un nombre esta en la lista,Listas
+me sale IndentationError y no se que es,Errores
+me dice SyntaxError invalid syntax en la linea del if,Errores
+me sale NameError name is not defined,Errores
+me dice que no puedo sumar str con int,Errores
+me sale IndexError list index out of range,Errores
+me olvide de cerrar un parentesis y me marca error en otra linea,Errores
+me sale ValueError cuando escribo un numero con coma,Errores
+que significa el mensaje rojo que aparece cuando ejecuto,Errores
+por que empieza a contar desde 0 y no desde 1,"Bucles (for, while)"
+como pongo si el usuario es menor de edad no entre,"Condicionales (if, elif, else)"
+puse lista[3] y me dice index error fuera de rango,Listas
+como ago para q me muestre la lista de uno en uno,"Bucles (for, while)"
+que es float y int no me me sale la diferencia,Variables y tipos de datos
+se borra la variable cuando cierro el programa?,Variables y tipos de datos
+me sale que '10' + '5' es 105 y no 15 ayuda,Variables y tipos de datos
+puse if x = 10 y me da error de sintasis,"Condicionales (if, elif, else)"
+cuando uso for y cuando while no entiendo,"Bucles (for, while)"
+xq me sale error si pongo nombre = 'Juan,Variables y tipos de datos
+puse num = 5 y dps num = 'cinco' se rompe todo?,Variables y tipos de datos
+me sale NameError: name 'resultado' is not defined q significa,Variables y tipos de datos
+por que el range(5) me llega hasta el 4 y no al 5,"Bucles (for, while)"
+por que me da error si intento sumar dos listas,Listas
+por que mi lista empieza a contar desde cero,"Bucles (for, while)"
+por que mi programa no reconoce las mayusculas y minusculas como iguales,"Bucles (for, while)"
+porque me devuelve varias veces esta palabra,"Bucles (for, while)"
+como hago para que una palabra se muestre toda en mayusculas?,Variables y tipos de datos
+hay alguna forma de sacar los espacios que quedan antes de un texto?,Variables y tipos de datos
+como puedo saber cuantos caracteres tiene una palabra?,Variables y tipos de datos
+por que cuando escribo una palabra con espacios me la toma completa?,print e input
+como puedo reemplazar una palabra por otra dentro de un texto?,Variables y tipos de datos
+puedo separar una frase en varias palabras automaticamente?,Variables y tipos de datos
+como hago para juntar los nombres de una lista en una sola frase?,Listas
+por que no puedo modificar una letra directamente de un string?,Variables y tipos de datos
+como hago para que una palabra aparezca al reves?,Variables y tipos de datos
+puedo guardar una fecha en una variable?,Variables y tipos de datos
+como hago para saber si un texto contiene una letra determinada?,Variables y tipos de datos
+para que sirve el comando break?,"Bucles (for, while)"
+que hace continue cuando esta dentro de un ciclo?,"Bucles (for, while)"
+como hago para saltear una vuelta del for sin terminar todo el ciclo?,"Bucles (for, while)"
+se puede hacer un ciclo dentro de otro ciclo?,"Bucles (for, while)"
+como hago una tabla de multiplicar usando python?,"Bucles (for, while)"
+como hago para que el programa espere unos segundos antes de continuar?,"Bucles (for, while)"
+se puede ejecutar una parte del codigo solamente si se cumple una condicion?,"Condicionales (if, elif, else)"
+para que sirve el operador !=?,"Condicionales (if, elif, else)"
+que significa el operador % y para que se usa?,"Condicionales (if, elif, else)"
+como puedo calcular el promedio de varias notas?,Variables y tipos de datos
+como hago para encontrar el numero mas grande de una lista?,Listas
+como puedo encontrar el numero mas chico de una lista?,Listas
+como hago para invertir el orden de los elementos de una lista?,Listas
+que diferencia hay entre sort y sorted?,Listas
+como puedo copiar una lista sin modificar la original?,Listas
+para que sirve el comando len?,Funciones
+que significa que una funcion tenga un parametro?,Funciones
+puedo crear una funcion que no reciba ningun dato?,Funciones
+para que sirve return y en que se diferencia de print?,Funciones
+como hago para que una funcion pueda recibir dos numeros?,Funciones
+que pasa si creo una funcion pero nunca la llamo?,Funciones
+como puedo importar herramientas de otros modulos?,Avanzado
+para que sirve el modulo random?,Avanzado
+como puedo generar un numero aleatorio entre 1 y 100?,Avanzado
+que es un comentario en python y para que sirve?,Avanzado
+como escribo un comentario que ocupe varias lineas?,Avanzado
+puedo hacer que python lea un archivo de texto?,Avanzado
+como guardo informacion en un archivo para que no se pierda al cerrar el programa?,Avanzado
+que diferencia hay entre una lista y una tupla?,Listas
+Quiero que me muestre mi nombre pero el que guardé en la variable,Variables y tipos de datos
+Puedo guardar mi nombre y mi edad en una misma variable?,Variables y tipos de datos
+Puse una variable con mi nombre pero cuando la llamo me muestra otra cosa.,Variables y tipos de datos
+Que pasa si le pongo el mismo nombre a dos variables?,Variables y tipos de datos
+Tengo un número guardado y quiero agregarle 10 pero sin perder el anterior.,Variables y tipos de datos
+Si escribo precio = 150 como hago para cambiarlo después?,Variables y tipos de datos
+Por qué cuando pongo verdadero en una variable me dice que no existe?,Variables y tipos de datos
+Se puede guardar una respuesta de sí o no en una variable?,Variables y tipos de datos
+Quiero guardar el resultado de una multiplicación para usarlo después.,Variables y tipos de datos
+No entiendo por qué Python sabe que algo es un número si nunca le dije el tipo.,Variables y tipos de datos
+Necesito deletrear mi nombre.,print e input
+Quiero que me diga hola mundo la compu.,print e input
+Como hago para que aparezca mi nombre 3 veces en pantalla?,print e input
+Quiero que me pregunte mi comida favorita y después me responda algo.,print e input
+Por qué mi programa me muestra las palabras pegadas cuando uso print?,print e input
+Puedo hacer que el usuario escriba varias cosas en un solo input?,print e input
+Quiero que me muestre una frase con mi nombre en el medio.,print e input
+Como hago para mostrar comillas dentro de un print?,print e input
+Escribí print(nombre) y no me muestra la palabra nombre.,print e input
+Quiero que la computadora me salude dependiendo de lo que escribo.,print e input
+Quiero que mi programa diga si puedo entrar a una película según mi edad.,"Condicionales (if, elif, else)"
+Puse un if pero siempre me aparece el mismo mensaje aunque cambie el número.,"Condicionales (if, elif, else)"
+Como hago para que mi programa reconozca si escribí la contraseña correcta?,"Condicionales (if, elif, else)"
+Quiero hacer un juego donde si tengo más de 100 puntos gano.,"Condicionales (if, elif, else)"
+Puedo poner un if dentro de otro if o se rompe?,"Condicionales (if, elif, else)"
+No entiendo por qué el else no lleva condición.,"Condicionales (if, elif, else)"
+Si tengo tres opciones diferentes tengo que usar tres if?,"Condicionales (if, elif, else)"
+Como hago para que si el usuario no escribe nada le diga que falta completar?,"Condicionales (if, elif, else)"
+Quiero que me diga si hace frío o calor dependiendo de la temperatura.,"Condicionales (if, elif, else)"
+Puse dos condiciones que son verdaderas pero solamente me ejecuta una.,"Condicionales (if, elif, else)"
+Quiero que un personaje avance cinco pasos sin escribir cinco veces lo mismo.,"Bucles (for, while)"
+Mi programa se queda repitiendo una pregunta y no me deja continuar.,"Bucles (for, while)"
+Como hago para que el programa cuente solamente los números pares?,"Bucles (for, while)"
+Quiero repetir una palabra hasta que el usuario escriba basta.,"Bucles (for, while)"
+Por qué el for termina solo pero el while a veces no?,"Bucles (for, while)"
+Puedo hacer que un bucle se detenga cuando llegue a un número específico?,"Bucles (for, while)"
+Quiero que me muestre la tabla del 7 pero no sé cómo repetir las multiplicaciones.,"Bucles (for, while)"
+Como hago para que un contador aumente de dos en dos?,"Bucles (for, while)"
+Puse un while con una condición pero nunca entra al bucle.,"Bucles (for, while)"
+Se puede poner un for dentro de otro for? Para qué serviría?,"Bucles (for, while)"
+Quiero guardar las notas de todos mis compañeros para después calcular el promedio.,Listas
+Como hago para mostrar solamente el último elemento de una lista?,Listas
+Puedo agregar nombres a una lista usando input?,Listas
+Quiero ordenar una lista de números de menor a mayor.,Listas
+Como hago para saber cuál es el número más grande de mi lista?,Listas
+Tengo una lista con nombres repetidos y quiero sacar los que están duplicados.,Listas
+Por qué cuando modifico una lista después aparecen los valores cambiados?,Listas
+Quiero elegir un nombre al azar de una lista.,Listas
+Puedo hacer una lista vacía y agregarle cosas después?,Listas
+Como hago para sumar todos los números que tengo guardados en una lista?,Listas
+"Por qué no funciona mi programa, me salta line 8 algo.",Errores
+Quiero hacer una calculadora pero no sé por dónde empezar.,Errores
+Mi programa no tiene errores rojos pero tampoco hace lo que quiero.,Errores
+Me aparece un error que dice TypeError y no entiendo qué significa.,Errores
+Copié el código del profesor exactamente igual y a mí no me funciona.,Errores
+Por qué Python me marca error en una línea que está vacía?,Errores
+El programa funciona hasta que escribo una letra en vez de un número.,Errores
+Mi calculadora suma bien pero cuando intento dividir se cierra.,Errores
+Cambié una cosa del código y ahora me aparecen cinco errores diferentes.,Errores
+Como hago para encontrar el error si tengo un programa muy largo?,Errores
