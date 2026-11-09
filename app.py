@@ -8,6 +8,7 @@
 # Las dudas nuevas se guardan en datos/dudas_nuevas.csv. Para mostrárselo a los estudiantes, apagar el modo equipo.
 
 import os
+import time
 from datetime import datetime
 
 import pandas as pd
@@ -44,9 +45,12 @@ def preparar_web():
     if not entrenar.url_planilla():
         return None
     try:
+        inicio = time.time()
         print("Trayendo la planilla del grupo...", flush=True)
         entrenar.traer_planilla()
+        print(f"Planilla traída en {time.time() - inicio:.1f} s, entrenando...", flush=True)
         res = entrenar.entrenar()
+        print(f"Entrenado en {time.time() - inicio:.1f} s desde que arrancó.", flush=True)
         tutor.recargar_modelo()
         estado = f"Al arrancar se entrenó con la planilla del grupo, {res['dudas']} dudas."
     except Exception as error:
