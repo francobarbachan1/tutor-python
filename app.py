@@ -11,8 +11,12 @@ import os
 import time
 from datetime import datetime
 
-import pandas as pd
-import streamlit as st
+# Un solo hilo para los cálculos (ver entrenar.py). Va antes de importar pandas.
+for _variable in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_variable, "1")
+
+import pandas as pd  # noqa: E402
+import streamlit as st  # noqa: E402
 
 st.set_page_config(page_title="Tutor de Python", page_icon="🐍")
 
@@ -26,7 +30,7 @@ try:
 except Exception:
     pass  # en la compu no hay secrets, se usan las variables de entorno
 
-print("Arrancando el tutor...", flush=True)
+print(f"Arrancando el tutor ({os.cpu_count()} procesadores a la vista)...", flush=True)
 import entrenar  # noqa: E402
 import tutor  # noqa: E402
 from guias import GUIAS  # noqa: E402

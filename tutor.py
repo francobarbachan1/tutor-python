@@ -27,7 +27,9 @@ def recargar_modelo():
         import entrenar
 
         print("Todavía no hay modelo, entrenando con las dudas guardadas...", flush=True)
+        inicio = time.time()
         entrenar.entrenar()
+        print(f"Listo, tardó {time.time() - inicio:.1f} s.", flush=True)
     modelo = joblib.load(ARCHIVO_MODELO)
 
 

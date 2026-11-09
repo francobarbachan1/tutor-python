@@ -12,6 +12,7 @@ from urllib.request import urlopen
 
 import joblib
 import pandas as pd
+from threadpoolctl import threadpool_limits
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import StratifiedKFold, cross_val_score
@@ -25,6 +26,11 @@ NUEVAS = os.path.join(CARPETA, "datos", "dudas_nuevas.csv")
 MODELO = os.path.join(CARPETA, "modelo.joblib")
 ULTIMO = os.path.join(CARPETA, "datos", "ultimo_entrenamiento.json")
 TEMAS = list(GUIAS)
+
+# En la web el servidor muestra muchos procesadores pero al tutor le toca una parte de uno.
+# Si las librerías de cálculo abren un hilo por procesador se traban, así que usan uno solo.
+# Con tan pocas dudas no hace falta más.
+threadpool_limits(1)
 
 
 def crear_modelo():
