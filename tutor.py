@@ -40,11 +40,55 @@ def detectar(duda):
     return modelo.classes_[mejor], float(probabilidades[mejor])
 
 
+# Tema relacionado (tarjeta KAN-40). La IA ya lee la duda, así que le pedimos que diga si también
+# toca otro de los seis temas. El detector no cambia.
+PALABRAS_DEL_TEMA = {
+    "Variables y tipos de datos": ("variable", "tipos de dato"),
+    "print e input": ("print", "input"),
+    "Condicionales (if, elif, else)": ("condicional",),
+    "Bucles (for, while)": ("bucle",),
+    "Listas": ("lista",),
+    "Errores": ("error",),
+}
+
+
+def pedido_relacionado(tema):
+    """Lo que se le agrega a las instrucciones para que la IA diga el tema relacionado."""
+    otros = ", ".join(t for t in GUIAS if t != tema)
+    return ("Después de la explicación, en una última línea aparte, escribí \"Tema relacionado:\" y uno "
+            f"de estos temas si la duda también tiene que ver con él: {otros}. Si no tiene que ver con "
+            "ninguno, escribí \"Tema relacionado: ninguno\". Esa línea no cuenta para las 5 líneas.")
+
+
+def leer_tema(texto):
+    """Busca cuál de los seis temas nombra el texto. Devuelve None si no nombra ninguno."""
+    texto = texto.lower()
+    for tema in GUIAS:
+        if tema.lower() in texto:
+            return tema
+    for tema, palabras in PALABRAS_DEL_TEMA.items():
+        if any(p in texto for p in palabras):
+            return tema
+    return None
+
+
+def separar_relacionado(respuesta, tema):
+    """Saca de la respuesta la línea "Tema relacionado: ..." y devuelve (respuesta, tema relacionado o None)."""
+    lineas = respuesta.rstrip().splitlines()
+    for i in range(len(lineas) - 1, -1, -1):
+        limpia = lineas[i].replace("*", "").replace("_", "").strip().lower()
+        if limpia.startswith("tema relacionado"):
+            relacionado = leer_tema(limpia[len("tema relacionado"):].lstrip(" :"))
+            respuesta = "\n".join(lineas[:i] + lineas[i + 1:]).strip()
+            return respuesta, (relacionado if relacionado != tema else None)
+    return respuesta, None
+
+
 def preguntar_a_la_ia(duda, tema):
     """Le manda la duda, las instrucciones y la guía del tema a la IA elegida."""
     api = os.getenv("TUTOR_API", "groq").lower()
     nombre_modelo = os.getenv("TUTOR_MODELO", MODELOS.get(api, MODELOS["groq"]))
-    sistema = INSTRUCCIONES + "\n\n" + guia_como_texto(tema)
+    sistema = INSTRUCCIONES + " " + pedido_relacionado(tema) + "\n\n" + guia_como_texto(tema)
 
     if api == "claude":
         import anthropic
@@ -80,17 +124,21 @@ def responder(duda):
     inicio = time.time()
     duda = (duda or "").strip()
     if not duda:
-        return {"tema": None, "seguridad": 0, "respuesta": "Escribí tu duda y tocá Preguntar.", "fuente": "tutor", "segundos": 0}
+        return {"tema": None, "seguridad": 0, "respuesta": "Escribí tu duda y tocá Preguntar.", "fuente": "tutor",
+                "relacionado": None, "segundos": 0}
 
     tema, seguridad = detectar(duda)
     if seguridad < UMBRAL:
         respuesta = ("No estoy seguro de qué tema es tu duda. ¿La podés escribir de otra forma, "
                      "contando qué querés hacer o qué error te aparece?")
         return {"tema": None, "seguridad": seguridad, "respuesta": respuesta, "fuente": "tutor",
-                "segundos": time.time() - inicio}
+                "relacionado": None, "segundos": time.time() - inicio}
 
+    relacionado = None
     try:
-        respuesta = preguntar_a_la_ia(duda, tema)
+        respuesta, relacionado = separar_relacionado(preguntar_a_la_ia(duda, tema), tema)
+        if not respuesta:
+            raise RuntimeError("La IA solo devolvió el tema relacionado")
         fuente = "ia"
     except Exception as error:
         # El motivo queda escrito en la terminal, para saber por qué no respondió la IA.
@@ -98,5 +146,6 @@ def responder(duda):
         g = GUIAS[tema]
         respuesta = f"{g['explicar']}\n\nEjemplo:\n```python\n{g['ejemplo']}\n```"
         fuente = "guía"
+        relacionado = None
     return {"tema": tema, "seguridad": seguridad, "respuesta": respuesta, "fuente": fuente,
-            "segundos": time.time() - inicio}
+            "relacionado": relacionado, "segundos": time.time() - inicio}

@@ -23,7 +23,7 @@ En la compu el Modo equipo arranca prendido. En la web arranca apagado y pide la
 ## Cómo funciona por dentro
 
 - **Detector de temas** (`entrenar.py`). Aprende de nuestras dudas qué palabras van con cada tema. Mira palabras enteras y pedazos de palabras, así entiende aunque escriban con faltas. Usa scikit-learn (TF-IDF y regresión logística). Si está menos de 45% seguro, pide que reescriban la duda.
-- **IA que escribe** (`tutor.py`). Recibe las instrucciones (tutor para estudiantes de 12 a 15 años, 5 líneas o menos, con un ejemplo) y la guía del tema (`guias.py`). Usa Groq, que es gratis, con el modelo openai/gpt-oss-120b. Se puede cambiar a Claude. Si no hay clave o no hay internet, muestra la explicación de la guía.
+- **IA que escribe** (`tutor.py`). Recibe las instrucciones (tutor para estudiantes de 12 a 15 años, 5 líneas o menos, con un ejemplo) y la guía del tema (`guias.py`). Usa Groq, que es gratis, con el modelo openai/gpt-oss-120b. Se puede cambiar a Claude. Si no hay clave o no hay internet, muestra la explicación de la guía. La IA también dice si la duda toca otro de los seis temas, y en ese caso el tutor agrega abajo "Esto también tiene que ver con..." con la explicación corta de ese tema (KAN-40).
 - **Pantalla** (`app.py`). Está hecha con Streamlit.
 
 | Archivo | Para qué sirve | Tarjeta |

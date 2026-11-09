@@ -146,6 +146,9 @@ with tab_tutor:
             st.caption("Respuesta de la guía, porque no se pudo conectar con la IA.")
         elif r["fuente"] == "ia":
             st.caption("Esta respuesta la escribió una inteligencia artificial y puede tener errores.")
+        relacionado = r.get("relacionado")
+        if relacionado in GUIAS:
+            st.info(f"**Esto también tiene que ver con {relacionado}.** {GUIAS[relacionado]['explicar']}")
 
         if modo_equipo and r["duda"]:
             st.divider()
