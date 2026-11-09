@@ -176,3 +176,109 @@ El programa funciona hasta que escribo una letra en vez de un número.,Errores
 Mi calculadora suma bien pero cuando intento dividir se cierra.,Errores
 Cambié una cosa del código y ahora me aparecen cinco errores diferentes.,Errores
 Como hago para encontrar el error si tengo un programa muy largo?,Errores
+¿Por qué me dice que no está definido si solo puse verdadero en inglés?,Variables y tipos de datos
+¿Cómo hago para guardar un número pero que no se pueda cambiar nunca más?,Variables y tipos de datos
+"si pongo a, b = 1, 2 qué significa esa coma en el medio me da error",Variables y tipos de datos
+¿Puedo usar un guión del medio en el nombre de la variable tipo mi-nombre?,Variables y tipos de datos
+como hago para convertir un texto de números '123' en número de verdad pero sin usar int?,Variables y tipos de datos
+por que si multiplico una palabra por 3 me aparece 3 veces seguidas la palabra? ¿Es un error?,Variables y tipos de datos
+¿Qué pasa si no le pongo ningún valor a una variable y la creó vacía tipo x = ?,Variables y tipos de datos
+¿Por qué me da error cuando quiero usar None como nombre de variable?,Variables y tipos de datos
+¿Cómo hago para saber de qué tipo es una variable si no me doy cuenta a simple vista?,Variables y tipos de datos
+¿Si guardo un número negativo tipo -5 se considera int o es otro tipo de dato?,Variables y tipos de datos
+¿Por qué cuando uso input() se me congela la pantalla de abajo y no puedo escribir más código?,print e input
+¿Cómo hago para que en el input me aparezca un texto por defecto que el usuario pueda borrar?,print e input
+si pongo print() vacío sin nada adentro pasa algo o rompe el programa?,print e input
+como hago para imprimir algo de color rojo o azul en la consola?,print e input
+"puse print(f""hola {nombre}"") y me imprime literal la f y los corchetes por que sera?",print e input
+¿Por qué al hacer input de un precio con coma me da error si escribo con coma y no con punto?,print e input
+¿Puedo hacer que el print borre lo que escribió antes y ponga algo nuevo en el mismo lugar?,print e input
+me sale un espacio de más entre los textos del print cuando separan con comas como se saca?,print e input
+¿Cómo hago para ingresar dos valores en una sola línea apretando entre una sola vez?,print e input
+¿Por qué cuando ejecuto el input en IDLE me abre una ventana nueva y a mis compañeros no?,print e input
+por que si pongo if 10 < x < 20 no me da error pero a veces no entra?,"Condicionales (if, elif, else)"
+¿Cómo se escribe la condición de que un número esté entre dos valores pero sin incluir los bordes?,"Condicionales (if, elif, else)"
+¿Puedo poner un if que no tenga nada dentro de las instrucciones o tengo que poner algo si o si?,"Condicionales (if, elif, else)"
+por que cuando pongo if respuesta == 'si' or 's' me toma como que siempre es verdadero?,"Condicionales (if, elif, else)"
+¿Qué diferencia hay entre poner varios if seguidos o poner if y después elif?,"Condicionales (if, elif, else)"
+¿Cómo hago para verificar si dos palabras son exactamente iguales sin importar las tildes?,"Condicionales (if, elif, else)"
+si pongo if not x que significa el not? se refiere a que x es cero o vacío?,"Condicionales (if, elif, else)"
+¿Por que me marca error de sintaxis si pongo else con una condición entre paréntesis?,"Condicionales (if, elif, else)"
+¿Cómo hago para saber si un número es múltiplo de 5 usando el if?,"Condicionales (if, elif, else)"
+puedo hacer una condición que compare tres variables al mismo tiempo tipo a == b == c?,"Condicionales (if, elif, else)"
+como hago para detener un while si se colgo y no me aparece el botón rojo de stop?,"Bucles (for, while)"
+por que si pongo for i in 10 me dice que int no es iterable? ¿Cómo era la sintaxis?,"Bucles (for, while)"
+¿Puedo usar una letra que no sea la 'i' en el for o es obligatorio usar la i siempre?,"Bucles (for, while)"
+"como hago para recorrer un bucle for al revés, desde el 10 hasta el 1?","Bucles (for, while)"
+que pasa si modifico la variable del contador dentro del bucle for? se saltea pasos?,"Bucles (for, while)"
+como hago un while que se ejecute al menos una vez antes de revisar la condición?,"Bucles (for, while)"
+¿Por qué mi bucle for termina antes de recorrer todo si puse un return dentro?,"Bucles (for, while)"
+se puede poner un else al final de un bucle for? ¿Para qué serviría eso?,"Bucles (for, while)"
+como hago para que un while avance solo cuando presiono una tecla?,"Bucles (for, while)"
+"por que cuando hago for x in range(1, 5, -1) no hace nada y se saltea el bucle?","Bucles (for, while)"
+¿Cómo hago para vaciar una lista entera de un solo saque sin borrar la variable?,Listas
+por que si pongo lista2 = lista1 y cambio lista2 se me cambia lista1 también?,Listas
+cómo insertar un elemento en una posición específica de la lista y no al final?,Listas
+¿cómo puedo contar cuantas veces se repite una misma palabra dentro de mi lista?,Listas
+que pasa si intento acceder a una posición negativa de la lista tipo lista-1? da error?,Listas
+¿Cómo hago para juntar dos listas distintas en una sola lista más grande?,Listas
+¿Puedo usar una lista dentro de otra lista tipo una matriz? cómo accedo a los datos?,Listas
+por que me sale error al hacer lista.remove() sí el elemento no estaba en la lista?,Listas
+¿Cómo obtengo una sublista con los primeros 3 elementos nada mas sin usar un for?,Listas
+cual es la diferencia entre lista0 y lista.pop(0)? ¿hacen lo mismo?,Listas
+me sale UnboundLocalError local variable referenced before assignment que significa eso?,Errores
+por que me tira ZeroDivisionError si no estoy dividiendo por cero explícitamente en ninguna linea?,Errores
+me sale ModuleNotFoundError no module named ... como instalo la librería si no me abre la consola?,Errores
+por que me da AttributeError 'list' object has no attribute 'lower'?,Errores
+me aparece RecursionError maximum recursion depth exceeded por que pasa si no use funciones avanzadas?,Errores
+me da un error que dice KeyError en mi programa de listas por que me habla de keys?,Errores
+por que me salta un error de indentation si yo veo todos los espacios iguales a simple vista?,Errores
+¿Qué significa EOFError when reading a line en el input de la plataforma online?,Errores
+me sale TabError inacurate use of tabs and spaces in indentation como lo arreglo rapido?,Errores
+¿Por qué el intérprete me marca error en la última línea del archivo si ahi no escribí nada?,Errores
+Por qué cuando guardo un número decimal con coma me da error de sintaxis y tengo que usar un punto ,Variables y tipos de datos
+"¿Qué diferencia hay entre usar print(""Hola"") y escribir solo Hola en la consola de Python?",print e input
+Por qué si tengo una variable numérica y le sumo un texto con + me salta un TypeError en vez de juntarlos,Variables y tipos de datos
+como hago para que el input me deje escribir en la misma linea que la pregunta,print e input
+por que si pongo input() solo no aparece nada y el programa se queda esperando,print e input
+"quiero mostrar la edad que me dicen mas 1, como hago",print e input
+"me sale el print con los parentesis y las comillas en la pantalla, que hice mal",print e input
+"como hago para que el usuario escriba un numero con coma, tipo 7.5",print e input
+puedo guardar lo que escribe el usuario y mostrarlo despues,print e input
+"el profe dijo que use f-string en el print, que es eso",print e input
+como imprimo varias lineas con un solo print,print e input
+quiero que me pida la nota y despues me la muestre con un mensaje,print e input
+por que el input me toma el numero como texto si yo escribi un numero,print e input
+como hago para separar lo que muestro con guiones en vez de espacios,print e input
+pongo print(edad) y me muestra el numero pero sin la palabra edad,print e input
+como hago para que diga si un numero esta entre 1 y 10,"Condicionales (if, elif, else)"
+quiero que si escriben si o no el programa haga cosas distintas,"Condicionales (if, elif, else)"
+como comparo si dos palabras son iguales en un if,"Condicionales (if, elif, else)"
+el elif va con condicion o sin condicion?,"Condicionales (if, elif, else)"
+si pongo varios elif cual se fija primero,"Condicionales (if, elif, else)"
+"quiero que el programa diga si el numero es positivo, negativo o cero","Condicionales (if, elif, else)"
+que pasa si pongo el else antes del if,"Condicionales (if, elif, else)"
+como hago que diga bien si acierto el numero secreto y mal si no,"Condicionales (if, elif, else)"
+puedo usar or para que acepte si y SI,"Condicionales (if, elif, else)"
+por que el print que esta abajo del if se hace siempre aunque no se cumpla,"Condicionales (if, elif, else)"
+como hago para que diga excelente si la nota es 12 y aprobado si es 6 o mas,"Condicionales (if, elif, else)"
+que significa not en un if,"Condicionales (if, elif, else)"
+como hago que el print muestre el resultado de 5 por 3,print e input
+quiero preguntar el nombre y la edad y que diga hola con los dos,print e input
+como muestro un numero con dos decimales en el print,print e input
+puedo poner un input adentro de un print,print e input
+quiero que el programa escriba lo mismo que yo escribi,print e input
+como hago para que me pregunte tres cosas una atras de otra,print e input
+cual es la diferencia entre print con coma y print con mas,print e input
+me sale NameError: name nombre is not defined pero yo la escribi,Errores
+que significa IndentationError expected an indented block,Errores
+me sale un error en rojo que dice invalid syntax y no se que esta mal,Errores
+me tira ValueError cuando escribo una letra en vez de un numero,Errores
+el error me marca una linea pero yo la veo bien,Errores
+me sale IndexError list index out of range,Errores
+que quiere decir Traceback cuando me sale todo eso en rojo,Errores
+me olvide de cerrar las comillas y ahora no anda nada,Errores
+"me salta ZeroDivisionError, que hice",Errores
+como leo el mensaje de error para saber donde esta el problema,Errores
+"me sale un TypeError cuando quiero sumar, que significa",Errores
+el programa me tira error apenas lo corro y no se en que linea mirar,Errores

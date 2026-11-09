@@ -40,9 +40,19 @@ def normalizar(texto):
     return " ".join(str(texto).lower().split())
 
 
+# Formas cortas de escribir un tema que aparecen en la planilla.
+OTROS_NOMBRES = {
+    "tipos de datos": "Variables y tipos de datos",
+    "variables": "Variables y tipos de datos",
+    "condicionales": "Condicionales (if, elif, else)",
+    "bucles": "Bucles (for, while)",
+}
+
+
 def normalizar_tema(tema):
-    """Acepta el tema aunque esté escrito con otras mayúsculas o espacios de más."""
-    return {t.lower(): t for t in TEMAS}.get(" ".join(str(tema).split()).lower(), tema)
+    """Acepta el tema aunque esté escrito con otras mayúsculas, espacios de más o en forma corta."""
+    clave = " ".join(str(tema).split()).lower()
+    return {t.lower(): t for t in TEMAS}.get(clave) or OTROS_NOMBRES.get(clave, tema)
 
 
 def leer_csv(archivo):
