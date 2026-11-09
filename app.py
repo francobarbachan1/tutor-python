@@ -25,6 +25,7 @@ try:
 except Exception:
     pass  # en la compu no hay secrets, se usan las variables de entorno
 
+print("Arrancando el tutor...", flush=True)
 import entrenar  # noqa: E402
 import tutor  # noqa: E402
 from guias import GUIAS  # noqa: E402
@@ -43,12 +44,15 @@ def preparar_web():
     if not entrenar.url_planilla():
         return None
     try:
+        print("Trayendo la planilla del grupo...", flush=True)
         entrenar.traer_planilla()
         res = entrenar.entrenar()
         tutor.recargar_modelo()
-        return f"Al arrancar se entrenó con la planilla del grupo, {res['dudas']} dudas."
+        estado = f"Al arrancar se entrenó con la planilla del grupo, {res['dudas']} dudas."
     except Exception as error:
-        return f"No se pudo traer la planilla al arrancar, se usan las dudas guardadas. Motivo: {error}"
+        estado = f"No se pudo traer la planilla al arrancar, se usan las dudas guardadas. Motivo: {error}"
+    print(estado, flush=True)
+    return estado
 
 
 estado_web = preparar_web()

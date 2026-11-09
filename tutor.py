@@ -26,6 +26,7 @@ def recargar_modelo():
     if not os.path.exists(ARCHIVO_MODELO):
         import entrenar
 
+        print("Todavía no hay modelo, entrenando con las dudas guardadas...", flush=True)
         entrenar.entrenar()
     modelo = joblib.load(ARCHIVO_MODELO)
 

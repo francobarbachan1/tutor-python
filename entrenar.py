@@ -3,10 +3,12 @@
 # Junta las dudas de datos/nuestras_dudas.csv (la planilla del grupo) y de datos/dudas_nuevas.csv
 # (las que se catalogan o se cargan desde el tutor), mide los aciertos y guarda modelo.joblib.
 
+import io
 import json
 import os
 import re
 from datetime import datetime
+from urllib.request import urlopen
 
 import joblib
 import pandas as pd
@@ -91,9 +93,11 @@ def guardar_planilla(planilla):
     return int(planilla["tema"].isin(TEMAS).sum()), len(planilla)
 
 
-def traer_planilla(url=None):
-    """Baja la planilla del grupo desde Google Sheets. Tiene que poder verse con el enlace."""
-    return guardar_planilla(pd.read_csv(url_csv(url or url_planilla())))
+def traer_planilla(url=None, espera=20):
+    """Baja la planilla del grupo desde Google Sheets. Tiene que poder verse con el enlace.
+    Si Google no contesta en `espera` segundos, da error y se usan las dudas guardadas."""
+    with urlopen(url_csv(url or url_planilla()), timeout=espera) as r:
+        return guardar_planilla(pd.read_csv(io.BytesIO(r.read())))
 
 
 def juntar_dudas():
