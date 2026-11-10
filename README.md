@@ -58,7 +58,7 @@ No hace falta saber comandos. Se puede hacer todo desde VS Code.
 
 ## Cómo está publicado en la web
 
-Streamlit es la librería con la que está hecha la pantalla del tutor. **Streamlit Community Cloud** es un servicio gratis de la misma empresa: toma el código de este repositorio, lo corre en sus computadoras y da un link para usarlo desde cualquier navegador. Cada vez que alguien sube un cambio a GitHub, la web se actualiza sola.
+Streamlit es la librería con la que está hecha la pantalla del tutor. **Streamlit Community Cloud** es un servicio gratis de la misma empresa: toma el código de este repositorio, lo corre en sus computadoras y da un link para usarlo desde cualquier navegador. Cada vez que alguien sube un cambio a GitHub, la web se actualiza sola, pero solo recarga `app.py`. Si el cambio es en `tutor.py`, `entrenar.py` o `guias.py`, hay que reiniciarla desde Manage app, Reboot app, para que tome el código nuevo. La web está en https://tutor-python-cerp.streamlit.app/
 
 Para publicarlo (una sola vez):
 1. Entrar a [share.streamlit.io](https://share.streamlit.io) con la cuenta de GitHub.
