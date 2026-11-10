@@ -304,3 +304,17 @@ porque hay errores en python,Errores
 La creación de las bibliotecas,Avanzado
 mi duda son las variables,Variables y tipos de datos
 Algunpd Bucles son complicados,"Bucles (for, while)"
+tipos de datos,Variables y tipos de datos
+que son los tipos de datos,Variables y tipos de datos
+no entiendo los tipos de datos,Variables y tipos de datos
+cuales son los tipos de datos de python,Variables y tipos de datos
+para que sirven los tipos de datos,Variables y tipos de datos
+"cual es la diferencia entre los tipos de datos int, float y str",Variables y tipos de datos
+append,Listas
+para que sirve el append,Listas
+que es un traceback,Errores
+que significa traceback,Errores
+"que significa print(""Hola"",nombre"")",print e input
+"que hace este codigo if edad >= 18: print(""mayor"")","Condicionales (if, elif, else)"
+que hace while x < 5: print(x),"Bucles (for, while)"
+que significa for i in range(3): print(i),"Bucles (for, while)"

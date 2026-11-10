@@ -138,11 +138,15 @@ else:
 # ---------- Tutor ----------
 
 with tab_tutor:
-    st.write("Escribí tu duda con tus palabras, como si se la preguntaras a un profe. "
+    st.write("Escribí tu duda con tus palabras, como si se la preguntaras a un profe, y tocá Preguntar. "
              "No pongas tu nombre ni datos personales.")
-    duda = st.text_area("Tu duda", placeholder="Por ejemplo: mi while no para nunca")
+    # En un formulario la duda también se manda con Ctrl+Enter. Enter solo baja de renglón,
+    # porque a veces pegan código (KAN-48).
+    with st.form("pregunta", border=False):
+        duda = st.text_area("Tu duda", placeholder="Por ejemplo: mi while no para nunca")
+        preguntar = st.form_submit_button("Preguntar", type="primary")
 
-    if st.button("Preguntar", type="primary"):
+    if preguntar:
         with st.spinner("Pensando..."):
             resultado = tutor.responder(duda)
         st.session_state.resultado = {**resultado, "duda": (duda or "").strip()}
