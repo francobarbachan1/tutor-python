@@ -30,7 +30,6 @@ try:
 except Exception:
     pass  # en la compu no hay secrets, se usan las variables de entorno
 
-print(f"Arrancando el tutor ({os.cpu_count()} procesadores a la vista)...", flush=True)
 import entrenar  # noqa: E402
 import tutor  # noqa: E402
 from guias import GUIAS  # noqa: E402
@@ -48,6 +47,7 @@ def preparar_web():
     """Si hay link de la planilla, al arrancar la trae y entrena una vez. En la compu no hace nada."""
     if not entrenar.url_planilla():
         return None
+    print(f"Arrancando el tutor ({os.cpu_count()} procesadores a la vista)...", flush=True)
     try:
         inicio = time.time()
         print("Trayendo la planilla del grupo...", flush=True)
