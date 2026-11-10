@@ -7,6 +7,7 @@
 # Si no hay clave o no hay internet, el tutor muestra la explicación base de la guía.
 
 import os
+import re
 import time
 
 import joblib
@@ -75,15 +76,20 @@ def leer_tema(texto):
     return None
 
 
+# "Tema relacionado: ..." con o sin negrita. A veces la IA la pone al final de un renglón y no aparte.
+MARCA_RELACIONADO = re.compile(r"[*_\s]*tema relacionado[*_\s]*:?[*_\s]*(.*)$", re.IGNORECASE)
+
+
 def separar_relacionado(respuesta, tema):
     """Saca de la respuesta la línea "Tema relacionado: ..." y devuelve (respuesta, tema relacionado o None)."""
     lineas = respuesta.rstrip().splitlines()
     for i in range(len(lineas) - 1, -1, -1):
-        limpia = lineas[i].replace("*", "").replace("_", "").strip().lower()
-        if limpia.startswith("tema relacionado"):
-            relacionado = leer_tema(limpia[len("tema relacionado"):].lstrip(" :"))
-            respuesta = "\n".join(lineas[:i] + lineas[i + 1:]).strip()
-            return respuesta, (relacionado if relacionado != tema else None)
+        marca = MARCA_RELACIONADO.search(lineas[i])
+        if marca:
+            relacionado = leer_tema(marca.group(1).replace("*", "").replace("_", ""))
+            antes = lineas[i][:marca.start()].rstrip()
+            lineas = lineas[:i] + ([antes] if antes else []) + lineas[i + 1:]
+            return "\n".join(lineas).strip(), (relacionado if relacionado != tema else None)
     return respuesta, None
 
 
