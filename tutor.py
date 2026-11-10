@@ -12,7 +12,7 @@ import time
 
 import joblib
 
-from guias import GUIAS, INSTRUCCIONES, guia_como_texto
+from guias import GUIAS, INSTRUCCIONES, guia_como_texto, SIN_TEMA
 
 UMBRAL = 0.45  # si el detector está menos seguro que esto, pide que reescriban la duda
 # Groq dio de baja llama-3.3-70b-versatile el 16/8/2026 y recomienda openai/gpt-oss-120b.
@@ -97,7 +97,8 @@ def preguntar_a_la_ia(duda, tema):
     """Le manda la duda, las instrucciones y la guía del tema a la IA elegida."""
     api = os.getenv("TUTOR_API", "groq").lower()
     nombre_modelo = os.getenv("TUTOR_MODELO", MODELOS.get(api, MODELOS["groq"]))
-    sistema = INSTRUCCIONES + " " + pedido_relacionado(tema) + "\n\n" + guia_como_texto(tema)
+    guia = guia_como_texto(tema) if tema else SIN_TEMA
+    sistema = INSTRUCCIONES + " " + pedido_relacionado(tema) + "\n\n" + guia
 
     if api == "claude":
         import anthropic
@@ -137,11 +138,9 @@ def responder(duda):
                 "relacionado": None, "segundos": 0}
 
     tema, seguridad = detectar(duda)
+    # Si el detector no está seguro, la IA responde igual pero sin la guía de un tema (KAN-49).
     if seguridad < UMBRAL:
-        respuesta = ("No estoy seguro de qué tema es tu duda. ¿La podés escribir de otra forma, "
-                     "contando qué querés hacer o qué error te aparece?")
-        return {"tema": None, "seguridad": seguridad, "respuesta": respuesta, "fuente": "tutor",
-                "relacionado": None, "segundos": time.time() - inicio}
+        tema = None
 
     relacionado = None
     try:
@@ -151,10 +150,16 @@ def responder(duda):
         fuente = "ia"
     except Exception as error:
         # El motivo queda escrito en la terminal, para saber por qué no respondió la IA.
-        print("No se pudo usar la IA, se muestra la guía. Motivo:", error)
-        g = GUIAS[tema]
-        respuesta = f"{g['explicar']}\n\nEjemplo:\n```python\n{g['ejemplo']}\n```"
-        fuente = "guía"
+        print("No se pudo usar la IA. Motivo:", error, flush=True)
         relacionado = None
+        if tema:
+            g = GUIAS[tema]
+            respuesta = f"{g['explicar']}\n\nEjemplo:\n```python\n{g['ejemplo']}\n```"
+            fuente = "guía"
+        else:
+            # Sin IA y sin tema no hay guía para mostrar.
+            respuesta = ("No estoy seguro de qué tema es tu duda. ¿La podés escribir de otra forma, "
+                         "contando qué querés hacer o qué error te aparece?")
+            fuente = "tutor"
     return {"tema": tema, "seguridad": seguridad, "respuesta": respuesta, "fuente": fuente,
             "relacionado": relacionado, "segundos": time.time() - inicio}

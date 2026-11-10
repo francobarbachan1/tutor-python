@@ -157,6 +157,9 @@ with tab_tutor:
     if r:
         if r["tema"]:
             st.caption(f"Tema: {r['tema']}" + (f", seguro al {r['seguridad']:.0%}" if modo_equipo else ""))
+        elif r["fuente"] == "ia":
+            st.caption("No reconocí el tema de tu duda, te responde la IA sin la guía de un tema."
+                       + (f" Seguro al {r['seguridad']:.0%}." if modo_equipo else ""))
         st.markdown(r["respuesta"])
         if r["fuente"] == "guía":
             st.caption("Respuesta de la guía, porque no se pudo conectar con la IA.")

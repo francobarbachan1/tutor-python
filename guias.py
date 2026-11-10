@@ -73,6 +73,15 @@ INSTRUCCIONES = (
 )
 
 
+# Cuando el detector no está seguro del tema, la IA responde igual pero sin la guía de un tema (KAN-49).
+SIN_TEMA = (
+    "No sabemos de qué tema es la duda. Si es sobre programar en Python, respondela igual con las mismas "
+    "reglas, aunque no sea de los temas que vemos en clase. Si no es sobre programar en Python, por ejemplo "
+    "una cuenta de matemática, otra materia, un juego, un saludo o una charla, no la respondas y decí "
+    "amablemente que solo ayudás con dudas de Python."
+)
+
+
 def guia_como_texto(tema):
     """Arma el texto de la guía de un tema para mandarle a la IA."""
     g = GUIAS[tema]
