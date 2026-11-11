@@ -68,6 +68,6 @@ Para publicarlo (una sola vez):
 
 Lo que se guarda en la web se borra cuando se reinicia. Por eso las dudas se cargan en la planilla, y la web la trae cada vez que arranca.
 
-## Estado al 10/11
+## Estado al 11/11
 
-La planilla tiene 319 dudas, las 240 que escribimos entre los cuatro, 43 para cerrar el modelo, 22 reales del formulario y 14 por lo que encontraron los testers. Se entrena con 303, porque las otras son de Funciones y Avanzado, que no están entre los seis temas, y una está repetida. El detector acierta 82% en la validación cruzada y 85% con las 60 dudas de Mauricio sin verlas. La meta era 80%.
+La planilla tiene 379 dudas, las 240 que escribimos entre los cuatro, 43 para cerrar el modelo, 22 reales del formulario, 14 por lo que encontraron los testers y 60 que sumó Axel el 11/11, redactadas con ChatGPT. Se entrena con 355, porque las otras son de Funciones y Avanzado, que no están entre los seis temas, y una está repetida. El detector acierta 83% en la validación cruzada y 88% con las 60 dudas de Mauricio sin verlas. La meta era 80%.

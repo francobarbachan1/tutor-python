@@ -63,10 +63,10 @@ por que empieza a contar desde 0 y no desde 1,"Bucles (for, while)"
 como pongo si el usuario es menor de edad no entre,"Condicionales (if, elif, else)"
 puse lista[3] y me dice index error fuera de rango,Listas
 como ago para q me muestre la lista de uno en uno,"Bucles (for, while)"
-que es float y int no me me sale la diferencia,Variables y tipos de datos
-se borra la variable cuando cierro el programa?,Variables y tipos de datos
+que es float y int no me me sale la diferencia,variables y tipos de datos
+se borra la variable cuando cierro el programa?,variables y tipos de datos
 me sale que '10' + '5' es 105 y no 15 ayuda,Variables y tipos de datos
-puse if x = 10 y me da error de sintasis,"Condicionales (if, elif, else)"
+puse if x = 10 y me da error de sintasis,"condicionales (if, elif, else)"
 cuando uso for y cuando while no entiendo,"Bucles (for, while)"
 xq me sale error si pongo nombre = 'Juan,Variables y tipos de datos
 puse num = 5 y dps num = 'cinco' se rompe todo?,Variables y tipos de datos
@@ -166,16 +166,16 @@ Por qué cuando modifico una lista después aparecen los valores cambiados?,List
 Quiero elegir un nombre al azar de una lista.,Listas
 Puedo hacer una lista vacía y agregarle cosas después?,Listas
 Como hago para sumar todos los números que tengo guardados en una lista?,Listas
-"Por qué no funciona mi programa, me salta line 8 algo.",Errores
-Quiero hacer una calculadora pero no sé por dónde empezar.,Errores
-Mi programa no tiene errores rojos pero tampoco hace lo que quiero.,Errores
-Me aparece un error que dice TypeError y no entiendo qué significa.,Errores
-Copié el código del profesor exactamente igual y a mí no me funciona.,Errores
-Por qué Python me marca error en una línea que está vacía?,Errores
-El programa funciona hasta que escribo una letra en vez de un número.,Errores
-Mi calculadora suma bien pero cuando intento dividir se cierra.,Errores
-Cambié una cosa del código y ahora me aparecen cinco errores diferentes.,Errores
-Como hago para encontrar el error si tengo un programa muy largo?,Errores
+"Por qué no funciona mi programa, me salta line 8 algo.",Errores 
+Quiero hacer una calculadora pero no sé por dónde empezar.,Errores 
+Mi programa no tiene errores rojos pero tampoco hace lo que quiero.,Errores 
+Me aparece un error que dice TypeError y no entiendo qué significa.,Errores 
+Copié el código del profesor exactamente igual y a mí no me funciona.,Errores 
+Por qué Python me marca error en una línea que está vacía?,Errores 
+El programa funciona hasta que escribo una letra en vez de un número.,Errores 
+Mi calculadora suma bien pero cuando intento dividir se cierra.,Errores 
+Cambié una cosa del código y ahora me aparecen cinco errores diferentes.,Errores 
+Como hago para encontrar el error si tengo un programa muy largo?,Errores 
 ¿Por qué me dice que no está definido si solo puse verdadero en inglés?,Variables y tipos de datos
 ¿Cómo hago para guardar un número pero que no se pueda cambiar nunca más?,Variables y tipos de datos
 "si pongo a, b = 1, 2 qué significa esa coma en el medio me da error",Variables y tipos de datos
@@ -236,9 +236,9 @@ por que me salta un error de indentation si yo veo todos los espacios iguales a 
 ¿Qué significa EOFError when reading a line en el input de la plataforma online?,Errores
 me sale TabError inacurate use of tabs and spaces in indentation como lo arreglo rapido?,Errores
 ¿Por qué el intérprete me marca error en la última línea del archivo si ahi no escribí nada?,Errores
-Por qué cuando guardo un número decimal con coma me da error de sintaxis y tengo que usar un punto ,Variables y tipos de datos
+Por qué cuando guardo un número decimal con coma me da error de sintaxis y tengo que usar un punto ,Tipos de datos
 "¿Qué diferencia hay entre usar print(""Hola"") y escribir solo Hola en la consola de Python?",print e input
-Por qué si tengo una variable numérica y le sumo un texto con + me salta un TypeError en vez de juntarlos,Variables y tipos de datos
+Por qué si tengo una variable numérica y le sumo un texto con + me salta un TypeError en vez de juntarlos,Tipos de datos
 como hago para que el input me deje escribir en la misma linea que la pregunta,print e input
 por que si pongo input() solo no aparece nada y el programa se queda esperando,print e input
 "quiero mostrar la edad que me dicen mas 1, como hago",print e input
@@ -318,3 +318,63 @@ que significa traceback,Errores
 "que hace este codigo if edad >= 18: print(""mayor"")","Condicionales (if, elif, else)"
 que hace while x < 5: print(x),"Bucles (for, while)"
 que significa for i in range(3): print(i),"Bucles (for, while)"
+puedo guardar dos nombres diferentes en dos variables y compararlos?,Variables y tipos de datos
+que significa que una variable tenga el valor True o False?,Variables y tipos de datos
+como puedo convertir un numero en texto?,Variables y tipos de datos
+si creo una variable dentro de otra parte del codigo puedo usarla en cualquier lado?,Variables y tipos de datos
+que pasa si guardo una operacion matematica directamente en una variable?,Variables y tipos de datos
+puedo usar espacios en el nombre de una variable?,Variables y tipos de datos
+como puedo intercambiar los valores de dos variables?,Variables y tipos de datos
+que diferencia hay entre una variable y una constante?,Variables y tipos de datos
+como hago para que el print muestre un texto en varias lineas sin usar varios print?,print e input
+puedo hacer que el input tenga un mensaje diferente dependiendo de lo que eligio antes?,print e input
+como hago para mostrar el simbolo de porcentaje en un print?,print e input
+por que cuando pongo varias variables en un print algunas aparecen juntas y otras separadas?,print e input
+puedo mostrar el resultado de una division sin tantos numeros decimales?,print e input
+como hago para que el usuario pueda escribir su apellido despues de su nombre?,print e input
+quiero que el programa me pregunte algo y que la respuesta aparezca en una frase personalizada,print e input
+como hago para que el print muestre un mensaje sin dejar espacios al principio?,print e input
+como hago para que el programa diga si un numero es mayor a 10 pero menor a 50?,"Condicionales (if, elif, else)"
+quiero que si la nota es menor a 6 diga insuficiente y si es mayor a 10 diga excelente,"Condicionales (if, elif, else)"
+puedo comparar un numero con una variable que tiene texto?,"Condicionales (if, elif, else)"
+como hago para que el programa compruebe si una respuesta empieza con una letra determinada?,"Condicionales (if, elif, else)"
+si tengo un if y un elif verdaderos al mismo tiempo cual se ejecuta?,"Condicionales (if, elif, else)"
+como hago para que solo pueda continuar si el usuario tiene entre 13 y 18 años?,"Condicionales (if, elif, else)"
+para que sirve poner parentesis en una condicion con and y or?,"Condicionales (if, elif, else)"
+puedo usar una variable dentro de la condicion de un if aunque cambie su valor?,"Condicionales (if, elif, else)"
+como hago para que el ciclo se repita hasta llegar a 100?,"Bucles (for, while)"
+quiero que el programa cuente de 5 en 5 hasta llegar a 50,"Bucles (for, while)"
+como hago para que un for recorra solamente los numeros impares?,"Bucles (for, while)"
+si pongo un break dentro de un if que esta en un for se termina todo el ciclo?,"Bucles (for, while)"
+como puedo saber cuantas vueltas dio un while?,"Bucles (for, while)"
+quiero que el programa me pida una palabra y la repita la misma cantidad de veces que yo le diga,"Bucles (for, while)"
+por que mi contador empieza en 1 pero despues aumenta de dos en dos?,"Bucles (for, while)"
+como hago para que un ciclo termine cuando encuentre un numero determinado?,"Bucles (for, while)"
+puedo usar una variable creada afuera del for dentro del ciclo?,"Bucles (for, while)"
+como hago para que un while vuelva a empezar despues de terminar una vuelta?,"Bucles (for, while)"
+como puedo agregar varios elementos a una lista sin usar append muchas veces?,Listas
+quiero saber si mi lista esta vacia como puedo comprobarlo?,Listas
+como puedo eliminar todos los nombres repetidos de una lista?,Listas
+puedo guardar una lista de listas y recorrerla con un for?,Listas
+como hago para encontrar en que posicion esta un elemento de mi lista?,Listas
+si tengo dos listas con la misma cantidad de elementos puedo unir sus valores?,Listas
+como hago para contar solamente los numeros positivos que tengo en una lista?,Listas
+quiero mostrar los elementos de una lista pero empezando por el segundo,Listas
+como puedo comprobar si todos los elementos de una lista son numeros?,Listas
+que pasa si uso append para agregar una lista dentro de otra lista?,Listas
+me aparece TypeError object is not callable y no entiendo que significa,Errores
+por que me dice float object is not subscriptable cuando intento acceder a un dato?,Errores
+me aparece un error diciendo that function is not defined pero yo la cree,Errores
+como puede ser que el programa funcione una vez y despues me de error?,Errores
+me sale un error cuando intento convertir un numero decimal a entero,Errores
+por que python me dice que una lista no tiene ese atributo si estoy seguro de que existe?,Errores
+que significa el error RecursionError y como puedo saber donde se produce?,Errores
+me aparece un error de archivo no encontrado pero el archivo esta guardado en mi computadora,Errores
+puedo hacer una funcion que devuelva dos resultados diferentes?,Funciones
+como hago para que una funcion use una variable que cree fuera de ella?,Funciones
+que pasa si llamo a una funcion dentro de otra funcion?,Funciones
+puedo poner un valor predeterminado a un parametro de una funcion?,Funciones
+por que mi funcion devuelve None si yo esperaba un numero?,Funciones
+como puedo saber que version de python estoy utilizando?,Avanzado
+para que sirve importar math y que cosas puedo hacer con ese modulo?,Avanzado
+como hago para que mi programa pueda abrir una imagen guardada en mi computadora?,Avanzado
