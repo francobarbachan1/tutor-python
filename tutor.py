@@ -14,7 +14,7 @@ import joblib
 
 from guias import GUIAS, INSTRUCCIONES, guia_como_texto, SIN_TEMA
 
-UMBRAL = 0.45  # si el detector está menos seguro que esto, pide que reescriban la duda
+UMBRAL = 0.45  # si el detector está menos seguro que esto, la IA responde sin la guía de un tema
 # Groq dio de baja llama-3.3-70b-versatile el 16/8/2026 y recomienda openai/gpt-oss-120b.
 MODELOS = {"groq": "openai/gpt-oss-120b", "claude": "claude-haiku-4-5"}
 

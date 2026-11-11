@@ -6,7 +6,7 @@ Es un tutor para estudiantes de 12 a 15 años de EBI que están aprendiendo Pyth
 
 ## Probarlo
 
-- **En la web**, con el link que da Streamlit, cuando esté publicado (ver más abajo).
+- **En la web**, en https://tutor-python-cerp.streamlit.app/ (ver más abajo cómo está publicado).
 - **En una compu con Windows**, se baja el repositorio (botón verde Code, Download ZIP), se descomprime y se hace doble clic en `abrir_tutor.bat`. La primera vez instala Python y las librerías si faltan. Después pide la clave de Groq. Si no hay clave, se toca Enter y el tutor responde con la guía.
 - **A mano**, en cualquier sistema, con `pip install -r requirements.txt` y después `streamlit run app.py`.
 
@@ -68,6 +68,6 @@ Para publicarlo (una sola vez):
 
 Lo que se guarda en la web se borra cuando se reinicia. Por eso las dudas se cargan en la planilla, y la web la trae cada vez que arranca.
 
-## Estado al 4/11
+## Estado al 10/11
 
-La planilla tiene 177 dudas, 60 de Franco, 60 de Camila y 57 de Axel. Se usan 164, porque 13 son de Funciones y Avanzado, que no están entre los seis temas. Con las 164 el detector acierta alrededor del 66% de las dudas que no vio. Con las 74 de antes era 51%. Los temas que más le cuestan son print e input y Errores. La meta es 80%.
+La planilla tiene 319 dudas, las 240 que escribimos entre los cuatro, 43 para cerrar el modelo, 22 reales del formulario y 14 por lo que encontraron los testers. Se entrena con 303, porque las otras son de Funciones y Avanzado, que no están entre los seis temas, y una está repetida. El detector acierta 82% en la validación cruzada y 85% con las 60 dudas de Mauricio sin verlas. La meta era 80%.
